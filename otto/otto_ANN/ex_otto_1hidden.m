@@ -1,9 +1,9 @@
 
 % Initialization
 clear ; close all; clc
-cd('/home/harry/Documents/git/kaggle/otto/otto_ANN')
+cd('/home/harry/Documents/git/kaggle/otto/otto_ANN/')
 load logFile_1hidden.mat    % load log file
-load('train.mat');          % load data (data is generated using the ex_prepareData script)
+load('data_set.mat');          % load data (data is generated using the ex_prepareData script)
 
 
 for lambda = [20]
