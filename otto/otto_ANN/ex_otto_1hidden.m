@@ -1,7 +1,7 @@
 
 % Initialization
 clear ; close all; clc
-cd('C:\Data\Data Science\Kaggle\otto\NN')
+cd('/home/harry/Documents/git/kaggle/otto/otto_ANN')
 load logFile_1hidden.mat    % load log file
 load('train.mat');          % load data (data is generated using the ex_prepareData script)
 
@@ -52,6 +52,7 @@ pred_sub = predict(Theta1, Theta2, X_sub);      % submission set
 % Calculate errors
 err = -sum(sum((y_mat.*log(max(min(pred,1-1e-15),1e-15)))))/size(pred,1);
 err_val = -sum(sum((y_mat_val.*log(max(min(pred_val,1-1e-15),1e-15)))))/size(pred_val,1);
+
 
 
 % update log file & display result

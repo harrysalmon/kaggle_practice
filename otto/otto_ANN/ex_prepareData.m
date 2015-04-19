@@ -4,7 +4,7 @@
 clear; close all; clc
 
 % path of the training data
-dirPath = 'C:\Data\Data Science\Kaggle\otto\NN\';
+dirPath = '/home/harry/Documents/git/kaggle/otto/otto_ANN';
 
 % read csv file containing training labels
 fid = fopen('train.csv');
